@@ -1,0 +1,99 @@
+[
+    {
+        "module": "Fill", 
+        "size": {
+            ".data": 3, 
+            ".bss": 39, 
+            ".text": 160
+        }
+    }, 
+    {
+        "module": "Misc", 
+        "size": {
+            ".data": 2488, 
+            ".bss": 198, 
+            ".text": 28120
+        }
+    }, 
+    {
+        "module": "drivers", 
+        "size": {
+            ".data": 0, 
+            ".bss": 0, 
+            ".text": 704
+        }
+    }, 
+    {
+        "module": "events", 
+        "size": {
+            ".data": 0, 
+            ".bss": 0, 
+            ".text": 48
+        }
+    }, 
+    {
+        "module": "events/equeue", 
+        "size": {
+            ".data": 0, 
+            ".bss": 61, 
+            ".text": 1238
+        }
+    }, 
+    {
+        "module": "features/FEATURE_BLE", 
+        "size": {
+            ".data": 5, 
+            ".bss": 540, 
+            ".text": 16388
+        }
+    }, 
+    {
+        "module": "hal", 
+        "size": {
+            ".data": 0, 
+            ".bss": 16, 
+            ".text": 506
+        }
+    }, 
+    {
+        "module": "platform", 
+        "size": {
+            ".data": 4, 
+            ".bss": 264, 
+            ".text": 1399
+        }
+    }, 
+    {
+        "module": "rtos", 
+        "size": {
+            ".data": 4, 
+            ".bss": 4, 
+            ".text": 102
+        }
+    }, 
+    {
+        "module": "rtos/rtx", 
+        "size": {
+            ".data": 20, 
+            ".bss": 4278, 
+            ".text": 6417
+        }
+    }, 
+    {
+        "module": "targets/TARGET_NORDIC", 
+        "size": {
+            ".data": 140, 
+            ".bss": 2200, 
+            ".text": 23679
+        }
+    }, 
+    {
+        "summary": {
+            "total_flash": 81425, 
+            "static_ram": 10264, 
+            "stack": 2048, 
+            "heap": 40984, 
+            "total_ram": 53296
+        }
+    }
+]
