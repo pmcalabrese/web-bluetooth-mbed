@@ -4808,7 +4808,6 @@ Discarded input sections
  .group         0x0000000000000000        0x8 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
  .group         0x0000000000000000        0x8 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
  .group         0x0000000000000000        0x8 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
- .group         0x0000000000000000        0x8 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
  .text          0x0000000000000000        0x0 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
  .data          0x0000000000000000        0x0 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
  .bss           0x0000000000000000        0x0 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
@@ -5760,7 +5759,7 @@ END GROUP
 LOAD /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/thumb/v7e-m/fpv4-sp/softfp/crtend.o
 LOAD /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/thumb/v7e-m/fpv4-sp/softfp/crtn.o
 
-.text           0x000000000001c000    0x13788
+.text           0x000000000001c000    0x13748
  *(.Vectors)
  .Vectors       0x000000000001c000       0xdc ./BUILD/NRF52_DK/GCC_ARM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5/TARGET_MCU_NRF52832/device/TOOLCHAIN_GCC_ARM/startup_NRF52832.o
                 0x000000000001c000                __Vectors
@@ -8193,337 +8192,331 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-non
  .text._Z13blinkCallbackv
                 0x00000000000281d4       0x20 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
                 0x00000000000281d4                blinkCallback()
- .text._Z15bleInitCallbackv
-                0x00000000000281f4       0x20 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
-                0x00000000000281f4                bleInitCallback()
  .text._ZN6events10EventQueue13function_callIN4mbed8CallbackIFvvEEEEEvPv
-                0x0000000000028214       0x28 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
-                0x0000000000028214                void events::EventQueue::function_call<mbed::Callback<void ()> >(void*)
+                0x00000000000281f4       0x28 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
+                0x00000000000281f4                void events::EventQueue::function_call<mbed::Callback<void ()> >(void*)
  .text._Z21onDataWrittenCallbackPK23GattWriteCallbackParams
-                0x000000000002823c       0x28 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
-                0x000000000002823c                onDataWrittenCallback(GattWriteCallbackParams const*)
+                0x000000000002821c       0x28 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
+                0x000000000002821c                onDataWrittenCallback(GattWriteCallbackParams const*)
  .text._ZN18GapAdvertisingData11appendFieldENS_10DataType_tEPKhh
-                0x0000000000028264       0x4e ./BUILD/NRF52_DK/GCC_ARM/source/main.o
-                0x0000000000028264                GapAdvertisingData::appendField(GapAdvertisingData::DataType_t, unsigned char const*, unsigned char)
- *fill*         0x00000000000282b2        0x2 
+                0x0000000000028244       0x4e ./BUILD/NRF52_DK/GCC_ARM/source/main.o
+                0x0000000000028244                GapAdvertisingData::appendField(GapAdvertisingData::DataType_t, unsigned char const*, unsigned char)
+ *fill*         0x0000000000028292        0x2 
  .text._ZN18GapAdvertisingData7addDataENS_10DataType_tEPKhh
-                0x00000000000282b4       0xd4 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
-                0x00000000000282b4                GapAdvertisingData::addData(GapAdvertisingData::DataType_t, unsigned char const*, unsigned char)
+                0x0000000000028294       0xd4 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
+                0x0000000000028294                GapAdvertisingData::addData(GapAdvertisingData::DataType_t, unsigned char const*, unsigned char)
  .text._ZN3Gap16startAdvertisingEv
-                0x0000000000028388       0x1c ./BUILD/NRF52_DK/GCC_ARM/source/main.o
-                0x0000000000028388                Gap::startAdvertising()
+                0x0000000000028368       0x1c ./BUILD/NRF52_DK/GCC_ARM/source/main.o
+                0x0000000000028368                Gap::startAdvertising()
  .text._Z21disconnectionCallbackPKN3Gap29DisconnectionCallbackParams_tE
-                0x00000000000283a4       0x12 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
-                0x00000000000283a4                disconnectionCallback(Gap::DisconnectionCallbackParams_t const*)
+                0x0000000000028384       0x12 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
+                0x0000000000028384                disconnectionCallback(Gap::DisconnectionCallbackParams_t const*)
  .text._ZN3Gap28accumulateAdvertisingPayloadEh
-                0x00000000000283b6       0x72 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
-                0x00000000000283b6                Gap::accumulateAdvertisingPayload(unsigned char)
+                0x0000000000028396       0x72 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
+                0x0000000000028396                Gap::accumulateAdvertisingPayload(unsigned char)
  .text._ZN3Gap28accumulateAdvertisingPayloadEN18GapAdvertisingData10DataType_tEPKhh
-                0x0000000000028428       0x74 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
-                0x0000000000028428                Gap::accumulateAdvertisingPayload(GapAdvertisingData::DataType_t, unsigned char const*, unsigned char)
+                0x0000000000028408       0x74 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
+                0x0000000000028408                Gap::accumulateAdvertisingPayload(GapAdvertisingData::DataType_t, unsigned char const*, unsigned char)
  .text._ZN4UUIDC2ERKS_
-                0x000000000002849c       0x1a ./BUILD/NRF52_DK/GCC_ARM/source/main.o
-                0x000000000002849c                UUID::UUID(UUID const&)
-                0x000000000002849c                UUID::UUID(UUID const&)
- *fill*         0x00000000000284b6        0x2 
+                0x000000000002847c       0x1a ./BUILD/NRF52_DK/GCC_ARM/source/main.o
+                0x000000000002847c                UUID::UUID(UUID const&)
+                0x000000000002847c                UUID::UUID(UUID const&)
+ *fill*         0x0000000000028496        0x2 
  .text._ZN10LEDServiceC2ER3BLEb
-                0x00000000000284b8       0xa4 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
-                0x00000000000284b8                LEDService::LEDService(BLE&, bool)
-                0x00000000000284b8                LEDService::LEDService(BLE&, bool)
+                0x0000000000028498       0xa4 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
+                0x0000000000028498                LEDService::LEDService(BLE&, bool)
+                0x0000000000028498                LEDService::LEDService(BLE&, bool)
  .text._ZN13ButtonServiceC2ER3BLEb
-                0x000000000002855c       0xa4 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
-                0x000000000002855c                ButtonService::ButtonService(BLE&, bool)
-                0x000000000002855c                ButtonService::ButtonService(BLE&, bool)
+                0x000000000002853c       0xa4 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
+                0x000000000002853c                ButtonService::ButtonService(BLE&, bool)
+                0x000000000002853c                ButtonService::ButtonService(BLE&, bool)
  .text._Z15bleInitCompletePN3BLE37InitializationCompleteCallbackContextE
-                0x0000000000028600      0x13c ./BUILD/NRF52_DK/GCC_ARM/source/main.o
-                0x0000000000028600                bleInitComplete(BLE::InitializationCompleteCallbackContext*)
+                0x00000000000285e0      0x13c ./BUILD/NRF52_DK/GCC_ARM/source/main.o
+                0x00000000000285e0                bleInitComplete(BLE::InitializationCompleteCallbackContext*)
  .text._ZN13ButtonService17updateButtonStateEb
-                0x000000000002873c       0x26 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
-                0x000000000002873c                ButtonService::updateButtonState(bool)
- *fill*         0x0000000000028762        0x2 
+                0x000000000002871c       0x26 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
+                0x000000000002871c                ButtonService::updateButtonState(bool)
+ *fill*         0x0000000000028742        0x2 
  .text._Z21buttonPressedCallbackv
-                0x0000000000028764       0x20 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
-                0x0000000000028764                buttonPressedCallback()
+                0x0000000000028744       0x20 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
+                0x0000000000028744                buttonPressedCallback()
  .text._Z22buttonReleasedCallbackv
-                0x0000000000028784       0x20 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
-                0x0000000000028784                buttonReleasedCallback()
+                0x0000000000028764       0x20 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
+                0x0000000000028764                buttonReleasedCallback()
  .text._ZN6events10EventQueue13function_dtorIN4mbed8CallbackIFvvEEEEEvPv
-                0x00000000000287a4        0x8 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
-                0x00000000000287a4                void events::EventQueue::function_dtor<mbed::Callback<void ()> >(void*)
+                0x0000000000028784        0x8 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
+                0x0000000000028784                void events::EventQueue::function_dtor<mbed::Callback<void ()> >(void*)
  .text._Z27scheduleBleEventsProcessingPN3BLE32OnEventsToProcessCallbackContextE
-                0x00000000000287ac       0x60 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
-                0x00000000000287ac                scheduleBleEventsProcessing(BLE::OnEventsToProcessCallbackContext*)
- .text._ZN6events10EventQueue10call_everyIPFvvEEEiiT_
-                0x000000000002880c       0x44 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
-                0x000000000002880c                int events::EventQueue::call_every<void (*)()>(int, void (*)())
+                0x000000000002878c       0x60 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
+                0x000000000002878c                scheduleBleEventsProcessing(BLE::OnEventsToProcessCallbackContext*)
  .text.startup.main
-                0x0000000000028850       0xd4 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
-                0x0000000000028850                main
+                0x00000000000287ec       0xe8 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
+                0x00000000000287ec                main
  .text.startup._GLOBAL__sub_I_alivenessLED
-                0x0000000000028924       0x8c ./BUILD/NRF52_DK/GCC_ARM/source/main.o
+                0x00000000000288d4       0x7c ./BUILD/NRF52_DK/GCC_ARM/source/main.o
  .text.__assert_func
-                0x00000000000289b0       0x3c /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-assert.o)
-                0x00000000000289b0                __assert_func
+                0x0000000000028950       0x3c /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-assert.o)
+                0x0000000000028950                __assert_func
  .text._calloc_r
-                0x00000000000289ec       0x60 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-callocr.o)
-                0x00000000000289ec                _calloc_r
- .text.__errno  0x0000000000028a4c        0xc /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-errno.o)
-                0x0000000000028a4c                __errno
+                0x000000000002898c       0x60 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-callocr.o)
+                0x000000000002898c                _calloc_r
+ .text.__errno  0x00000000000289ec        0xc /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-errno.o)
+                0x00000000000289ec                __errno
  .text._fclose_r
-                0x0000000000028a58       0x80 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-fclose.o)
-                0x0000000000028a58                _fclose_r
+                0x00000000000289f8       0x80 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-fclose.o)
+                0x00000000000289f8                _fclose_r
  .text.__sflush_r
-                0x0000000000028ad8      0x140 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-fflush.o)
-                0x0000000000028ad8                __sflush_r
+                0x0000000000028a78      0x140 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-fflush.o)
+                0x0000000000028a78                __sflush_r
  .text._fflush_r
-                0x0000000000028c18       0x2c /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-fflush.o)
-                0x0000000000028c18                _fflush_r
+                0x0000000000028bb8       0x2c /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-fflush.o)
+                0x0000000000028bb8                _fflush_r
  .text._cleanup_r
-                0x0000000000028c44        0xc /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-findfp.o)
-                0x0000000000028c44                _cleanup_r
+                0x0000000000028be4        0xc /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-findfp.o)
+                0x0000000000028be4                _cleanup_r
  .text.__sinit.part.1
-                0x0000000000028c50       0xf0 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-findfp.o)
- .text.__sinit  0x0000000000028d40        0xc /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-findfp.o)
-                0x0000000000028d40                __sinit
+                0x0000000000028bf0       0xf0 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-findfp.o)
+ .text.__sinit  0x0000000000028ce0        0xc /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-findfp.o)
+                0x0000000000028ce0                __sinit
  .text.__sfp_lock_acquire
-                0x0000000000028d4c        0x4 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-findfp.o)
-                0x0000000000028d4c                __sfp_lock_acquire
+                0x0000000000028cec        0x4 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-findfp.o)
+                0x0000000000028cec                __sfp_lock_acquire
  .text.__sfp_lock_release
-                0x0000000000028d50        0x4 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-findfp.o)
-                0x0000000000028d50                __sfp_lock_release
+                0x0000000000028cf0        0x4 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-findfp.o)
+                0x0000000000028cf0                __sfp_lock_release
  .text.fiprintf
-                0x0000000000028d54       0x28 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-fiprintf.o)
-                0x0000000000028d54                fiprintf
+                0x0000000000028cf4       0x28 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-fiprintf.o)
+                0x0000000000028cf4                fiprintf
  .text._malloc_trim_r
-                0x0000000000028d7c       0xa0 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-freer.o)
-                0x0000000000028d7c                _malloc_trim_r
- .text._free_r  0x0000000000028e1c      0x1cc /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-freer.o)
-                0x0000000000028e1c                _free_r
+                0x0000000000028d1c       0xa0 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-freer.o)
+                0x0000000000028d1c                _malloc_trim_r
+ .text._free_r  0x0000000000028dbc      0x1cc /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-freer.o)
+                0x0000000000028dbc                _free_r
  .text._fstat_r
-                0x0000000000028fe8       0x28 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-fstatr.o)
-                0x0000000000028fe8                _fstat_r
+                0x0000000000028f88       0x28 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-fstatr.o)
+                0x0000000000028f88                _fstat_r
  .text.__sfvwrite_r
-                0x0000000000029010      0x2f0 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-fvwrite.o)
-                0x0000000000029010                __sfvwrite_r
+                0x0000000000028fb0      0x2f0 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-fvwrite.o)
+                0x0000000000028fb0                __sfvwrite_r
  .text._fwalk_reent
-                0x0000000000029300       0x54 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-fwalk.o)
-                0x0000000000029300                _fwalk_reent
+                0x00000000000292a0       0x54 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-fwalk.o)
+                0x00000000000292a0                _fwalk_reent
  .text.__libc_init_array
-                0x0000000000029354       0x50 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-init.o)
-                0x0000000000029354                __libc_init_array
+                0x00000000000292f4       0x50 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-init.o)
+                0x00000000000292f4                __libc_init_array
  .text.__locale_mb_cur_max
-                0x00000000000293a4       0x1c /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-locale.o)
-                0x00000000000293a4                __locale_mb_cur_max
+                0x0000000000029344       0x1c /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-locale.o)
+                0x0000000000029344                __locale_mb_cur_max
  .text.__swhatbuf_r
-                0x00000000000293c0       0x5c /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-makebuf.o)
-                0x00000000000293c0                __swhatbuf_r
+                0x0000000000029360       0x5c /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-makebuf.o)
+                0x0000000000029360                __swhatbuf_r
  .text.__smakebuf_r
-                0x000000000002941c       0x88 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-makebuf.o)
-                0x000000000002941c                __smakebuf_r
- .text.malloc   0x00000000000294a4       0x10 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-malloc.o)
-                0x00000000000294a4                malloc
- .text.free     0x00000000000294b4       0x10 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-malloc.o)
-                0x00000000000294b4                free
+                0x00000000000293bc       0x88 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-makebuf.o)
+                0x00000000000293bc                __smakebuf_r
+ .text.malloc   0x0000000000029444       0x10 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-malloc.o)
+                0x0000000000029444                malloc
+ .text.free     0x0000000000029454       0x10 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-malloc.o)
+                0x0000000000029454                free
  .text._malloc_r
-                0x00000000000294c4      0x560 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-mallocr.o)
-                0x00000000000294c4                _malloc_r
+                0x0000000000029464      0x560 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-mallocr.o)
+                0x0000000000029464                _malloc_r
  .text.__ascii_mbtowc
-                0x0000000000029a24       0x2c /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-mbtowc_r.o)
-                0x0000000000029a24                __ascii_mbtowc
- .text          0x0000000000029a50       0xa0 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-memchr.o)
-                0x0000000000029a50                memchr
- .text.memcmp   0x0000000000029af0       0x60 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-memcmp.o)
-                0x0000000000029af0                memcmp
- .text          0x0000000000029b50      0x134 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-memcpy.o)
-                0x0000000000029b50                memcpy
- .text.memmove  0x0000000000029c84       0xc8 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-memmove.o)
-                0x0000000000029c84                memmove
- .text.memset   0x0000000000029d4c       0x9c /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-memset.o)
-                0x0000000000029d4c                memset
+                0x00000000000299c4       0x2c /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-mbtowc_r.o)
+                0x00000000000299c4                __ascii_mbtowc
+ .text          0x00000000000299f0       0xa0 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-memchr.o)
+                0x00000000000299f0                memchr
+ .text.memcmp   0x0000000000029a90       0x60 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-memcmp.o)
+                0x0000000000029a90                memcmp
+ .text          0x0000000000029af0      0x134 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-memcpy.o)
+                0x0000000000029af0                memcpy
+ .text.memmove  0x0000000000029c24       0xc8 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-memmove.o)
+                0x0000000000029c24                memmove
+ .text.memset   0x0000000000029cec       0x9c /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-memset.o)
+                0x0000000000029cec                memset
  .text._realloc_r
-                0x0000000000029de8      0x34c /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-reallocr.o)
-                0x0000000000029de8                _realloc_r
- .text._sbrk_r  0x000000000002a134       0x24 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-sbrkr.o)
-                0x000000000002a134                _sbrk_r
+                0x0000000000029d88      0x34c /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-reallocr.o)
+                0x0000000000029d88                _realloc_r
+ .text._sbrk_r  0x000000000002a0d4       0x24 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-sbrkr.o)
+                0x000000000002a0d4                _sbrk_r
  .text.snprintf
-                0x000000000002a158       0x98 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-snprintf.o)
-                0x000000000002a158                snprintf
- .text.__sread  0x000000000002a1f0       0x24 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-stdio.o)
-                0x000000000002a1f0                __sread
+                0x000000000002a0f8       0x98 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-snprintf.o)
+                0x000000000002a0f8                snprintf
+ .text.__sread  0x000000000002a190       0x24 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-stdio.o)
+                0x000000000002a190                __sread
  .text.__swrite
-                0x000000000002a214       0x3c /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-stdio.o)
-                0x000000000002a214                __swrite
- .text.__sseek  0x000000000002a250       0x20 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-stdio.o)
-                0x000000000002a250                __sseek
+                0x000000000002a1b4       0x3c /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-stdio.o)
+                0x000000000002a1b4                __swrite
+ .text.__sseek  0x000000000002a1f0       0x20 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-stdio.o)
+                0x000000000002a1f0                __sseek
  .text.__sclose
-                0x000000000002a270        0x8 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-stdio.o)
-                0x000000000002a270                __sclose
- *fill*         0x000000000002a278        0x8 
- .text          0x000000000002a280       0xdc /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-strlen.o)
-                0x000000000002a280                strlen
- .text.strncpy  0x000000000002a35c       0x64 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-strncpy.o)
-                0x000000000002a35c                strncpy
+                0x000000000002a210        0x8 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-stdio.o)
+                0x000000000002a210                __sclose
+ *fill*         0x000000000002a218       0x28 
+ .text          0x000000000002a240       0xdc /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-strlen.o)
+                0x000000000002a240                strlen
+ .text.strncpy  0x000000000002a31c       0x64 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-strncpy.o)
+                0x000000000002a31c                strncpy
  .text._svfprintf_r
-                0x000000000002a3c0     0x148c /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-svfprintf.o)
-                0x000000000002a3c0                _svfprintf_r
+                0x000000000002a380     0x148c /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-svfprintf.o)
+                0x000000000002a380                _svfprintf_r
  .text.__sprint_r.part.0
-                0x000000000002b84c       0x80 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-vfiprintf.o)
+                0x000000000002b80c       0x80 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-vfiprintf.o)
  .text._vfiprintf_r
-                0x000000000002b8cc      0xc00 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-vfiprintf.o)
-                0x000000000002b8cc                _vfiprintf_r
+                0x000000000002b88c      0xc00 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-vfiprintf.o)
+                0x000000000002b88c                _vfiprintf_r
  .text.__sbprintf
-                0x000000000002c4cc       0x6c /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-vfiprintf.o)
+                0x000000000002c48c       0x6c /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-vfiprintf.o)
  .text._vsprintf_r
-                0x000000000002c538       0x34 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-vsprintf.o)
-                0x000000000002c538                _vsprintf_r
+                0x000000000002c4f8       0x34 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-vsprintf.o)
+                0x000000000002c4f8                _vsprintf_r
  .text.vsprintf
-                0x000000000002c56c       0x18 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-vsprintf.o)
-                0x000000000002c56c                vsprintf
+                0x000000000002c52c       0x18 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-vsprintf.o)
+                0x000000000002c52c                vsprintf
  .text.__swbuf_r
-                0x000000000002c584       0xb0 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-wbuf.o)
-                0x000000000002c584                __swbuf_r
+                0x000000000002c544       0xb0 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-wbuf.o)
+                0x000000000002c544                __swbuf_r
  .text.__ascii_wctomb
-                0x000000000002c634       0x1c /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-wctomb_r.o)
-                0x000000000002c634                __ascii_wctomb
+                0x000000000002c5f4       0x1c /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-wctomb_r.o)
+                0x000000000002c5f4                __ascii_wctomb
  .text._write_r
-                0x000000000002c650       0x2c /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-writer.o)
-                0x000000000002c650                _write_r
+                0x000000000002c610       0x2c /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-writer.o)
+                0x000000000002c610                _write_r
  .text.__swsetup_r
-                0x000000000002c67c       0xc8 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-wsetup.o)
-                0x000000000002c67c                __swsetup_r
- .text.abort    0x000000000002c744       0x10 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-abort.o)
-                0x000000000002c744                abort
+                0x000000000002c63c       0xc8 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-wsetup.o)
+                0x000000000002c63c                __swsetup_r
+ .text.abort    0x000000000002c704       0x10 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-abort.o)
+                0x000000000002c704                abort
  .text._close_r
-                0x000000000002c754       0x24 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-closer.o)
-                0x000000000002c754                _close_r
- .text.quorem   0x000000000002c778      0x128 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-dtoa.o)
- .text._dtoa_r  0x000000000002c8a0      0xe34 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-dtoa.o)
-                0x000000000002c8a0                _dtoa_r
+                0x000000000002c714       0x24 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-closer.o)
+                0x000000000002c714                _close_r
+ .text.quorem   0x000000000002c738      0x128 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-dtoa.o)
+ .text._dtoa_r  0x000000000002c860      0xe34 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-dtoa.o)
+                0x000000000002c860                _dtoa_r
  .text.__fputwc
-                0x000000000002d6d4       0xa0 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-fputwc.o)
-                0x000000000002d6d4                __fputwc
+                0x000000000002d694       0xa0 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-fputwc.o)
+                0x000000000002d694                __fputwc
  .text._fputwc_r
-                0x000000000002d774       0x28 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-fputwc.o)
-                0x000000000002d774                _fputwc_r
+                0x000000000002d734       0x28 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-fputwc.o)
+                0x000000000002d734                _fputwc_r
  .text._isatty_r
-                0x000000000002d79c       0x24 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-isattyr.o)
-                0x000000000002d79c                _isatty_r
+                0x000000000002d75c       0x24 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-isattyr.o)
+                0x000000000002d75c                _isatty_r
  .text._localeconv_r
-                0x000000000002d7c0       0x1c /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-localeconv.o)
-                0x000000000002d7c0                _localeconv_r
+                0x000000000002d780       0x1c /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-localeconv.o)
+                0x000000000002d780                _localeconv_r
  .text._lseek_r
-                0x000000000002d7dc       0x2c /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-lseekr.o)
-                0x000000000002d7dc                _lseek_r
- .text._Balloc  0x000000000002d808       0x4c /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-mprec.o)
-                0x000000000002d808                _Balloc
- .text._Bfree   0x000000000002d854       0x14 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-mprec.o)
-                0x000000000002d854                _Bfree
+                0x000000000002d79c       0x2c /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-lseekr.o)
+                0x000000000002d79c                _lseek_r
+ .text._Balloc  0x000000000002d7c8       0x4c /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-mprec.o)
+                0x000000000002d7c8                _Balloc
+ .text._Bfree   0x000000000002d814       0x14 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-mprec.o)
+                0x000000000002d814                _Bfree
  .text.__multadd
-                0x000000000002d868       0x80 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-mprec.o)
-                0x000000000002d868                __multadd
+                0x000000000002d828       0x80 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-mprec.o)
+                0x000000000002d828                __multadd
  .text.__hi0bits
-                0x000000000002d8e8       0x40 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-mprec.o)
-                0x000000000002d8e8                __hi0bits
+                0x000000000002d8a8       0x40 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-mprec.o)
+                0x000000000002d8a8                __hi0bits
  .text.__lo0bits
-                0x000000000002d928       0x60 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-mprec.o)
-                0x000000000002d928                __lo0bits
- .text.__i2b    0x000000000002d988       0x14 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-mprec.o)
-                0x000000000002d988                __i2b
+                0x000000000002d8e8       0x60 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-mprec.o)
+                0x000000000002d8e8                __lo0bits
+ .text.__i2b    0x000000000002d948       0x14 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-mprec.o)
+                0x000000000002d948                __i2b
  .text.__multiply
-                0x000000000002d99c      0x124 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-mprec.o)
-                0x000000000002d99c                __multiply
+                0x000000000002d95c      0x124 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-mprec.o)
+                0x000000000002d95c                __multiply
  .text.__pow5mult
-                0x000000000002dac0       0xa0 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-mprec.o)
-                0x000000000002dac0                __pow5mult
+                0x000000000002da80       0xa0 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-mprec.o)
+                0x000000000002da80                __pow5mult
  .text.__lshift
-                0x000000000002db60       0xa4 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-mprec.o)
-                0x000000000002db60                __lshift
- .text.__mcmp   0x000000000002dc04       0x38 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-mprec.o)
-                0x000000000002dc04                __mcmp
- .text.__mdiff  0x000000000002dc3c      0x108 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-mprec.o)
-                0x000000000002dc3c                __mdiff
- .text.__d2b    0x000000000002dd44       0xb8 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-mprec.o)
-                0x000000000002dd44                __d2b
- .text._read_r  0x000000000002ddfc       0x2c /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-readr.o)
-                0x000000000002ddfc                _read_r
+                0x000000000002db20       0xa4 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-mprec.o)
+                0x000000000002db20                __lshift
+ .text.__mcmp   0x000000000002dbc4       0x38 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-mprec.o)
+                0x000000000002dbc4                __mcmp
+ .text.__mdiff  0x000000000002dbfc      0x108 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-mprec.o)
+                0x000000000002dbfc                __mdiff
+ .text.__d2b    0x000000000002dd04       0xb8 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-mprec.o)
+                0x000000000002dd04                __d2b
+ .text._read_r  0x000000000002ddbc       0x2c /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-readr.o)
+                0x000000000002ddbc                _read_r
  .text._raise_r
-                0x000000000002de28       0x60 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-signal.o)
-                0x000000000002de28                _raise_r
- .text.raise    0x000000000002de88       0x10 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-signal.o)
-                0x000000000002de88                raise
- .text._kill_r  0x000000000002de98       0x28 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-signalr.o)
-                0x000000000002de98                _kill_r
+                0x000000000002dde8       0x60 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-signal.o)
+                0x000000000002dde8                _raise_r
+ .text.raise    0x000000000002de48       0x10 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-signal.o)
+                0x000000000002de48                raise
+ .text._kill_r  0x000000000002de58       0x28 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-signalr.o)
+                0x000000000002de58                _kill_r
  .text._getpid_r
-                0x000000000002dec0        0x4 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-signalr.o)
-                0x000000000002dec0                _getpid_r
+                0x000000000002de80        0x4 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-signalr.o)
+                0x000000000002de80                _getpid_r
  .text.__ssprint_r
-                0x000000000002dec4       0xfc /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-svfiprintf.o)
-                0x000000000002dec4                __ssprint_r
+                0x000000000002de84       0xfc /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-svfiprintf.o)
+                0x000000000002de84                __ssprint_r
  .text._wcrtomb_r
-                0x000000000002dfc0       0x54 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-wcrtomb.o)
-                0x000000000002dfc0                _wcrtomb_r
- .text          0x000000000002e014      0x370 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/thumb/v7e-m/fpv4-sp/softfp/libgcc.a(_arm_addsubdf3.o)
-                0x000000000002e014                __aeabi_drsub
-                0x000000000002e01c                __subdf3
-                0x000000000002e01c                __aeabi_dsub
-                0x000000000002e020                __aeabi_dadd
-                0x000000000002e020                __adddf3
-                0x000000000002e298                __aeabi_ui2d
-                0x000000000002e298                __floatunsidf
-                0x000000000002e2b8                __floatsidf
-                0x000000000002e2b8                __aeabi_i2d
-                0x000000000002e2dc                __extendsfdf2
-                0x000000000002e2dc                __aeabi_f2d
-                0x000000000002e318                __aeabi_ul2d
-                0x000000000002e318                __floatundidf
-                0x000000000002e328                __aeabi_l2d
-                0x000000000002e328                __floatdidf
- .text          0x000000000002e384      0x424 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/thumb/v7e-m/fpv4-sp/softfp/libgcc.a(_arm_muldivdf3.o)
-                0x000000000002e384                __aeabi_dmul
-                0x000000000002e384                __muldf3
-                0x000000000002e5d8                __aeabi_ddiv
-                0x000000000002e5d8                __divdf3
- .text          0x000000000002e7a8      0x110 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/thumb/v7e-m/fpv4-sp/softfp/libgcc.a(_arm_cmpdf2.o)
-                0x000000000002e7a8                __gtdf2
-                0x000000000002e7a8                __gedf2
-                0x000000000002e7b0                __ltdf2
-                0x000000000002e7b0                __ledf2
-                0x000000000002e7b8                __eqdf2
-                0x000000000002e7b8                __nedf2
-                0x000000000002e7b8                __cmpdf2
-                0x000000000002e834                __aeabi_cdrcmple
-                0x000000000002e844                __aeabi_cdcmple
-                0x000000000002e844                __aeabi_cdcmpeq
-                0x000000000002e854                __aeabi_dcmpeq
-                0x000000000002e868                __aeabi_dcmplt
-                0x000000000002e87c                __aeabi_dcmple
-                0x000000000002e890                __aeabi_dcmpge
-                0x000000000002e8a4                __aeabi_dcmpgt
- .text          0x000000000002e8b8       0x2c /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/thumb/v7e-m/fpv4-sp/softfp/libgcc.a(_arm_unorddf2.o)
-                0x000000000002e8b8                __aeabi_dcmpun
-                0x000000000002e8b8                __unorddf2
- .text          0x000000000002e8e4       0x50 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/thumb/v7e-m/fpv4-sp/softfp/libgcc.a(_arm_fixdfsi.o)
-                0x000000000002e8e4                __fixdfsi
-                0x000000000002e8e4                __aeabi_d2iz
- .text          0x000000000002e934       0x30 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/thumb/v7e-m/fpv4-sp/softfp/libgcc.a(_aeabi_uldivmod.o)
-                0x000000000002e934                __aeabi_uldivmod
- .text          0x000000000002e964      0x2dc /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/thumb/v7e-m/fpv4-sp/softfp/libgcc.a(_udivmoddi4.o)
-                0x000000000002e964                __udivmoddi4
- .text          0x000000000002ec40        0x4 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/thumb/v7e-m/fpv4-sp/softfp/libgcc.a(_dvmd_tls.o)
-                0x000000000002ec40                __aeabi_ldiv0
-                0x000000000002ec40                __aeabi_idiv0
- .text._getpid  0x000000000002ec44       0x10 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libnosys.a(getpid.o)
-                0x000000000002ec44                _getpid
- .text._kill    0x000000000002ec54       0x10 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libnosys.a(kill.o)
-                0x000000000002ec54                _kill
+                0x000000000002df80       0x54 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-wcrtomb.o)
+                0x000000000002df80                _wcrtomb_r
+ .text          0x000000000002dfd4      0x370 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/thumb/v7e-m/fpv4-sp/softfp/libgcc.a(_arm_addsubdf3.o)
+                0x000000000002dfd4                __aeabi_drsub
+                0x000000000002dfdc                __subdf3
+                0x000000000002dfdc                __aeabi_dsub
+                0x000000000002dfe0                __aeabi_dadd
+                0x000000000002dfe0                __adddf3
+                0x000000000002e258                __aeabi_ui2d
+                0x000000000002e258                __floatunsidf
+                0x000000000002e278                __floatsidf
+                0x000000000002e278                __aeabi_i2d
+                0x000000000002e29c                __extendsfdf2
+                0x000000000002e29c                __aeabi_f2d
+                0x000000000002e2d8                __aeabi_ul2d
+                0x000000000002e2d8                __floatundidf
+                0x000000000002e2e8                __aeabi_l2d
+                0x000000000002e2e8                __floatdidf
+ .text          0x000000000002e344      0x424 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/thumb/v7e-m/fpv4-sp/softfp/libgcc.a(_arm_muldivdf3.o)
+                0x000000000002e344                __aeabi_dmul
+                0x000000000002e344                __muldf3
+                0x000000000002e598                __aeabi_ddiv
+                0x000000000002e598                __divdf3
+ .text          0x000000000002e768      0x110 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/thumb/v7e-m/fpv4-sp/softfp/libgcc.a(_arm_cmpdf2.o)
+                0x000000000002e768                __gtdf2
+                0x000000000002e768                __gedf2
+                0x000000000002e770                __ltdf2
+                0x000000000002e770                __ledf2
+                0x000000000002e778                __eqdf2
+                0x000000000002e778                __nedf2
+                0x000000000002e778                __cmpdf2
+                0x000000000002e7f4                __aeabi_cdrcmple
+                0x000000000002e804                __aeabi_cdcmple
+                0x000000000002e804                __aeabi_cdcmpeq
+                0x000000000002e814                __aeabi_dcmpeq
+                0x000000000002e828                __aeabi_dcmplt
+                0x000000000002e83c                __aeabi_dcmple
+                0x000000000002e850                __aeabi_dcmpge
+                0x000000000002e864                __aeabi_dcmpgt
+ .text          0x000000000002e878       0x2c /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/thumb/v7e-m/fpv4-sp/softfp/libgcc.a(_arm_unorddf2.o)
+                0x000000000002e878                __aeabi_dcmpun
+                0x000000000002e878                __unorddf2
+ .text          0x000000000002e8a4       0x50 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/thumb/v7e-m/fpv4-sp/softfp/libgcc.a(_arm_fixdfsi.o)
+                0x000000000002e8a4                __fixdfsi
+                0x000000000002e8a4                __aeabi_d2iz
+ .text          0x000000000002e8f4       0x30 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/thumb/v7e-m/fpv4-sp/softfp/libgcc.a(_aeabi_uldivmod.o)
+                0x000000000002e8f4                __aeabi_uldivmod
+ .text          0x000000000002e924      0x2dc /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/thumb/v7e-m/fpv4-sp/softfp/libgcc.a(_udivmoddi4.o)
+                0x000000000002e924                __udivmoddi4
+ .text          0x000000000002ec00        0x4 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/thumb/v7e-m/fpv4-sp/softfp/libgcc.a(_dvmd_tls.o)
+                0x000000000002ec00                __aeabi_ldiv0
+                0x000000000002ec00                __aeabi_idiv0
+ .text._getpid  0x000000000002ec04       0x10 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libnosys.a(getpid.o)
+                0x000000000002ec04                _getpid
+ .text._kill    0x000000000002ec14       0x10 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libnosys.a(kill.o)
+                0x000000000002ec14                _kill
  *(.init)
- .init          0x000000000002ec64        0x4 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/thumb/v7e-m/fpv4-sp/softfp/crti.o
-                0x000000000002ec64                _init
- .init          0x000000000002ec68        0x8 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/thumb/v7e-m/fpv4-sp/softfp/crtn.o
+ .init          0x000000000002ec24        0x4 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/thumb/v7e-m/fpv4-sp/softfp/crti.o
+                0x000000000002ec24                _init
+ .init          0x000000000002ec28        0x8 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/thumb/v7e-m/fpv4-sp/softfp/crtn.o
  *(.fini)
- .fini          0x000000000002ec70        0x4 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/thumb/v7e-m/fpv4-sp/softfp/crti.o
-                0x000000000002ec70                _fini
- .fini          0x000000000002ec74        0x8 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/thumb/v7e-m/fpv4-sp/softfp/crtn.o
+ .fini          0x000000000002ec30        0x4 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/thumb/v7e-m/fpv4-sp/softfp/crti.o
+                0x000000000002ec30                _fini
+ .fini          0x000000000002ec34        0x8 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/thumb/v7e-m/fpv4-sp/softfp/crtn.o
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -8536,302 +8529,302 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-non
  *(.dtors)
  *(.rodata*)
  .rodata._ZZN4mbed8CallbackIFvvEE8generateIPS1_EEvRKT_E3ops
-                0x000000000002ec7c        0xc ./BUILD/NRF52_DK/GCC_ARM/mbed-os/drivers/InterruptIn.o
-                0x000000000002ec7c                void mbed::Callback<void ()>::generate<void (*)()>(void (* const&)())::ops
+                0x000000000002ec3c        0xc ./BUILD/NRF52_DK/GCC_ARM/mbed-os/drivers/InterruptIn.o
+                0x000000000002ec3c                void mbed::Callback<void ()>::generate<void (*)()>(void (* const&)())::ops
  .rodata._ZNK4mbed8CallbackIFvvEE4callEv.str1.1
-                0x000000000002ec88       0x23 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/drivers/InterruptIn.o
- *fill*         0x000000000002ecab        0x1 
+                0x000000000002ec48       0x23 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/drivers/InterruptIn.o
+ *fill*         0x000000000002ec6b        0x1 
  .rodata._ZTVN4mbed11InterruptInE
-                0x000000000002ecac       0x10 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/drivers/InterruptIn.o
-                0x000000000002ecac                vtable for mbed::InterruptIn
+                0x000000000002ec6c       0x10 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/drivers/InterruptIn.o
+                0x000000000002ec6c                vtable for mbed::InterruptIn
  .rodata._ZN4mbed6Ticker7handlerEv.str1.1
-                0x000000000002ecbc       0x23 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/drivers/Ticker.o
+                0x000000000002ec7c       0x23 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/drivers/Ticker.o
  .rodata._ZTVN4mbed6TickerE
-                0x000000000002ecbc       0x14 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/drivers/Ticker.o
-                0x000000000002ecbc                vtable for mbed::Ticker
+                0x000000000002ec7c       0x14 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/drivers/Ticker.o
+                0x000000000002ec7c                vtable for mbed::Ticker
  .rodata._ZN4mbed7Timeout7handlerEv.str1.1
-                0x000000000002ecd0       0x23 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/drivers/Timeout.o
+                0x000000000002ec90       0x23 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/drivers/Timeout.o
  .rodata._ZTVN4mbed7TimeoutE
-                0x000000000002ecd0       0x14 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/drivers/Timeout.o
-                0x000000000002ecd0                vtable for mbed::Timeout
+                0x000000000002ec90       0x14 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/drivers/Timeout.o
+                0x000000000002ec90                vtable for mbed::Timeout
  .rodata._ZTVN4mbed10TimerEventE
-                0x000000000002ece4       0x14 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/drivers/TimerEvent.o
-                0x000000000002ece4                vtable for mbed::TimerEvent
+                0x000000000002eca4       0x14 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/drivers/TimerEvent.o
+                0x000000000002eca4                vtable for mbed::TimerEvent
  .rodata._ZNK3BLE14hasInitializedEv.str1.1
-                0x000000000002ecf8       0x23 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/source/BLE.o
+                0x000000000002ecb8       0x23 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/source/BLE.o
  .rodata._Z13btle_gap_initv.str1.1
-                0x000000000002ed1b        0x6 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/btle/btle_gap.o
+                0x000000000002ecdb        0x6 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/btle/btle_gap.o
  .rodata.CSWTCH.29
-                0x000000000002ed21        0x3 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/btle/btle_security_pm.o
+                0x000000000002ece1        0x3 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/btle/btle_security_pm.o
  .rodata._ZZN4mbed8CallbackIFvvEE8generateINS2_14method_contextI8nRF5xGapMS5_FvvEEEEEvRKT_E3ops
-                0x000000000002ed24        0xc ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xGap.o
-                0x000000000002ed24                void mbed::Callback<void ()>::generate<mbed::Callback<void ()>::method_context<nRF5xGap, void (nRF5xGap::*)()> >(mbed::Callback<void ()>::method_context<nRF5xGap, void (nRF5xGap::*)()> const&)::ops
+                0x000000000002ece4        0xc ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xGap.o
+                0x000000000002ece4                void mbed::Callback<void ()>::generate<mbed::Callback<void ()>::method_context<nRF5xGap, void (nRF5xGap::*)()> >(mbed::Callback<void ()>::method_context<nRF5xGap, void (nRF5xGap::*)()> const&)::ops
  .rodata._ZTV8nRF5xGap
-                0x000000000002ed30       0x8c ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xGap.o
-                0x000000000002ed30                vtable for nRF5xGap
+                0x000000000002ecf0       0x8c ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xGap.o
+                0x000000000002ecf0                vtable for nRF5xGap
  .rodata._ZZN8nRF5xGap25getPermittedTxPowerValuesEPPKaPjE17permittedTxValues
-                0x000000000002edbc        0x8 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xGap.o
+                0x000000000002ed7c        0x8 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xGap.o
  .rodata._ZTV15nRF5xGattClient
-                0x000000000002edc4       0x40 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xGattClient.o
-                0x000000000002edc4                vtable for nRF5xGattClient
+                0x000000000002ed84       0x40 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xGattClient.o
+                0x000000000002ed84                vtable for nRF5xGattClient
  .rodata._ZN12_GLOBAL__N_1L23write_auth_succes_replyE
-                0x000000000002ee04       0x10 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xGattServer.o
+                0x000000000002edc4       0x10 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xGattServer.o
  .rodata._ZN12_GLOBAL__N_1L24write_auth_invalid_replyE
-                0x000000000002ee14       0x10 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xGattServer.o
+                0x000000000002edd4       0x10 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xGattServer.o
  .rodata._ZN12_GLOBAL__N_1L31write_auth_invalid_offset_replyE
-                0x000000000002ee24       0x10 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xGattServer.o
+                0x000000000002ede4       0x10 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xGattServer.o
  .rodata._ZTV15nRF5xGattServer
-                0x000000000002ee34       0x2c ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xGattServer.o
-                0x000000000002ee34                vtable for nRF5xGattServer
- .rodata        0x000000000002ee60        0x8 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xServiceDiscovery.o
+                0x000000000002edf4       0x2c ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xGattServer.o
+                0x000000000002edf4                vtable for nRF5xGattServer
+ .rodata        0x000000000002ee20        0x8 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xServiceDiscovery.o
  .rodata._ZTV38CallChainOfFunctionPointersWithContextIN3Gap15TimeoutSource_tEE
-                0x000000000002ee68       0x10 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xn.o
-                0x000000000002ee68                vtable for CallChainOfFunctionPointersWithContext<Gap::TimeoutSource_t>
+                0x000000000002ee28       0x10 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xn.o
+                0x000000000002ee28                vtable for CallChainOfFunctionPointersWithContext<Gap::TimeoutSource_t>
  .rodata._ZTV38CallChainOfFunctionPointersWithContextIPKN3Gap26ConnectionCallbackParams_tEE
-                0x000000000002ee78       0x10 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xn.o
-                0x000000000002ee78                vtable for CallChainOfFunctionPointersWithContext<Gap::ConnectionCallbackParams_t const*>
+                0x000000000002ee38       0x10 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xn.o
+                0x000000000002ee38                vtable for CallChainOfFunctionPointersWithContext<Gap::ConnectionCallbackParams_t const*>
  .rodata._ZTV38CallChainOfFunctionPointersWithContextIPKN3Gap29DisconnectionCallbackParams_tEE
-                0x000000000002ee88       0x10 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xn.o
-                0x000000000002ee88                vtable for CallChainOfFunctionPointersWithContext<Gap::DisconnectionCallbackParams_t const*>
+                0x000000000002ee48       0x10 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xn.o
+                0x000000000002ee48                vtable for CallChainOfFunctionPointersWithContext<Gap::DisconnectionCallbackParams_t const*>
  .rodata._ZTV38CallChainOfFunctionPointersWithContextIPK3GapE
-                0x000000000002ee98       0x10 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xn.o
-                0x000000000002ee98                vtable for CallChainOfFunctionPointersWithContext<Gap const*>
+                0x000000000002ee58       0x10 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xn.o
+                0x000000000002ee58                vtable for CallChainOfFunctionPointersWithContext<Gap const*>
  .rodata._ZTV3Gap
-                0x000000000002eea8       0x8c ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xn.o
-                0x000000000002eea8                vtable for Gap
+                0x000000000002ee68       0x8c ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xn.o
+                0x000000000002ee68                vtable for Gap
  .rodata._ZTV38CallChainOfFunctionPointersWithContextIPK15SecurityManagerE
-                0x000000000002ef34       0x10 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xn.o
-                0x000000000002ef34                vtable for CallChainOfFunctionPointersWithContext<SecurityManager const*>
+                0x000000000002eef4       0x10 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xn.o
+                0x000000000002eef4                vtable for CallChainOfFunctionPointersWithContext<SecurityManager const*>
  .rodata._ZTV38CallChainOfFunctionPointersWithContextIjE
-                0x000000000002ef44       0x10 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xn.o
-                0x000000000002ef44                vtable for CallChainOfFunctionPointersWithContext<unsigned int>
+                0x000000000002ef04       0x10 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xn.o
+                0x000000000002ef04                vtable for CallChainOfFunctionPointersWithContext<unsigned int>
  .rodata._ZTV38CallChainOfFunctionPointersWithContextIPK23GattWriteCallbackParamsE
-                0x000000000002ef54       0x10 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xn.o
-                0x000000000002ef54                vtable for CallChainOfFunctionPointersWithContext<GattWriteCallbackParams const*>
+                0x000000000002ef14       0x10 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xn.o
+                0x000000000002ef14                vtable for CallChainOfFunctionPointersWithContext<GattWriteCallbackParams const*>
  .rodata._ZTV38CallChainOfFunctionPointersWithContextIPK22GattReadCallbackParamsE
-                0x000000000002ef64       0x10 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xn.o
-                0x000000000002ef64                vtable for CallChainOfFunctionPointersWithContext<GattReadCallbackParams const*>
+                0x000000000002ef24       0x10 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xn.o
+                0x000000000002ef24                vtable for CallChainOfFunctionPointersWithContext<GattReadCallbackParams const*>
  .rodata._ZTV38CallChainOfFunctionPointersWithContextIPK10GattServerE
-                0x000000000002ef74       0x10 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xn.o
-                0x000000000002ef74                vtable for CallChainOfFunctionPointersWithContext<GattServer const*>
+                0x000000000002ef34       0x10 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xn.o
+                0x000000000002ef34                vtable for CallChainOfFunctionPointersWithContext<GattServer const*>
  .rodata._ZTV10GattServer
-                0x000000000002ef84       0x2c ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xn.o
-                0x000000000002ef84                vtable for GattServer
+                0x000000000002ef44       0x2c ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xn.o
+                0x000000000002ef44                vtable for GattServer
  .rodata._ZTV16ServiceDiscovery
-                0x000000000002efb0       0x1c ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xn.o
-                0x000000000002efb0                vtable for ServiceDiscovery
+                0x000000000002ef70       0x1c ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xn.o
+                0x000000000002ef70                vtable for ServiceDiscovery
  .rodata._ZTV38CallChainOfFunctionPointersWithContextIPK21GattHVXCallbackParamsE
-                0x000000000002efcc       0x10 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xn.o
-                0x000000000002efcc                vtable for CallChainOfFunctionPointersWithContext<GattHVXCallbackParams const*>
+                0x000000000002ef8c       0x10 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xn.o
+                0x000000000002ef8c                vtable for CallChainOfFunctionPointersWithContext<GattHVXCallbackParams const*>
  .rodata._ZTV38CallChainOfFunctionPointersWithContextIPK10GattClientE
-                0x000000000002efdc       0x10 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xn.o
-                0x000000000002efdc                vtable for CallChainOfFunctionPointersWithContext<GattClient const*>
+                0x000000000002ef9c       0x10 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xn.o
+                0x000000000002ef9c                vtable for CallChainOfFunctionPointersWithContext<GattClient const*>
  .rodata._ZTV21nRF5xServiceDiscovery
-                0x000000000002efec       0x1c ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xn.o
-                0x000000000002efec                vtable for nRF5xServiceDiscovery
+                0x000000000002efac       0x1c ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xn.o
+                0x000000000002efac                vtable for nRF5xServiceDiscovery
  .rodata._ZTV20nRF5xSecurityManager
-                0x000000000002f008       0x34 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xn.o
-                0x000000000002f008                vtable for nRF5xSecurityManager
+                0x000000000002efc8       0x34 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xn.o
+                0x000000000002efc8                vtable for nRF5xSecurityManager
  .rodata._ZN6nRF5xn10getVersionEv.str1.1
-                0x000000000002f03c       0x64 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xn.o
+                0x000000000002effc       0x64 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xn.o
  .rodata._ZTV6nRF5xn
-                0x000000000002f0a0       0x44 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xn.o
-                0x000000000002f0a0                vtable for nRF5xn
+                0x000000000002f060       0x44 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_NRF5/source/nRF5xn.o
+                0x000000000002f060                vtable for nRF5xn
  .rodata.gpio_write.str1.1
-                0x000000000002f0e4       0x52 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/hal/mbed_gpio.o
- *fill*         0x000000000002f136        0x2 
+                0x000000000002f0a4       0x52 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/hal/mbed_gpio.o
+ *fill*         0x000000000002f0f6        0x2 
  .rodata.lp_data
-                0x000000000002f138        0x8 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/hal/mbed_lp_ticker_api.o
+                0x000000000002f0f8        0x8 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/hal/mbed_lp_ticker_api.o
  .rodata.lp_interface
-                0x000000000002f140       0x14 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/hal/mbed_lp_ticker_api.o
+                0x000000000002f100       0x14 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/hal/mbed_lp_ticker_api.o
  .rodata.us_data
-                0x000000000002f154        0x8 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/hal/mbed_us_ticker_api.o
+                0x000000000002f114        0x8 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/hal/mbed_us_ticker_api.o
  .rodata.us_interface
-                0x000000000002f15c       0x14 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/hal/mbed_us_ticker_api.o
+                0x000000000002f11c       0x14 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/hal/mbed_us_ticker_api.o
  .rodata.mbed_assert_internal.str1.1
-                0x000000000002f170       0x31 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/platform/mbed_assert.o
+                0x000000000002f130       0x31 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/platform/mbed_assert.o
  .rodata.gpio_write.str1.1
-                0x000000000002f1a1       0x52 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/platform/mbed_board.o
+                0x000000000002f161       0x52 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/platform/mbed_board.o
  .rodata._Znwj.str1.1
-                0x000000000002f1a1       0x1d ./BUILD/NRF52_DK/GCC_ARM/mbed-os/platform/retarget.o
+                0x000000000002f161       0x1d ./BUILD/NRF52_DK/GCC_ARM/mbed-os/platform/retarget.o
  .rodata.__cxa_guard_acquire.str1.1
-                0x000000000002f1be       0x46 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/platform/retarget.o
+                0x000000000002f17e       0x46 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/platform/retarget.o
  .rodata.__cxa_guard_release.str1.1
-                0x000000000002f204       0x3f ./BUILD/NRF52_DK/GCC_ARM/mbed-os/platform/retarget.o
- *fill*         0x000000000002f243        0x1 
+                0x000000000002f1c4       0x3f ./BUILD/NRF52_DK/GCC_ARM/mbed-os/platform/retarget.o
+ *fill*         0x000000000002f203        0x1 
  .rodata.mp_stk_size
-                0x000000000002f244        0x4 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/rtos/rtx/TARGET_CORTEX_M/RTX_Conf_CM.o
-                0x000000000002f244                mp_stk_size
+                0x000000000002f204        0x4 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/rtos/rtx/TARGET_CORTEX_M/RTX_Conf_CM.o
+                0x000000000002f204                mp_stk_size
  .rodata.mp_tcb_size
-                0x000000000002f248        0x2 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/rtos/rtx/TARGET_CORTEX_M/RTX_Conf_CM.o
-                0x000000000002f248                mp_tcb_size
+                0x000000000002f208        0x2 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/rtos/rtx/TARGET_CORTEX_M/RTX_Conf_CM.o
+                0x000000000002f208                mp_tcb_size
  .rodata.mp_tmr_size
-                0x000000000002f24a        0x2 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/rtos/rtx/TARGET_CORTEX_M/RTX_Conf_CM.o
-                0x000000000002f24a                mp_tmr_size
+                0x000000000002f20a        0x2 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/rtos/rtx/TARGET_CORTEX_M/RTX_Conf_CM.o
+                0x000000000002f20a                mp_tmr_size
  .rodata.os_clockrate
-                0x000000000002f24c        0x4 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/rtos/rtx/TARGET_CORTEX_M/RTX_Conf_CM.o
-                0x000000000002f24c                os_clockrate
+                0x000000000002f20c        0x4 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/rtos/rtx/TARGET_CORTEX_M/RTX_Conf_CM.o
+                0x000000000002f20c                os_clockrate
  .rodata.os_error.str1.1
-                0x000000000002f250       0x29 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/rtos/rtx/TARGET_CORTEX_M/RTX_Conf_CM.o
+                0x000000000002f210       0x29 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/rtos/rtx/TARGET_CORTEX_M/RTX_Conf_CM.o
  .rodata.os_fifo_size
-                0x000000000002f279        0x1 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/rtos/rtx/TARGET_CORTEX_M/RTX_Conf_CM.o
-                0x000000000002f279                os_fifo_size
+                0x000000000002f239        0x1 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/rtos/rtx/TARGET_CORTEX_M/RTX_Conf_CM.o
+                0x000000000002f239                os_fifo_size
  .rodata.os_flags
-                0x000000000002f27a        0x1 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/rtos/rtx/TARGET_CORTEX_M/RTX_Conf_CM.o
-                0x000000000002f27a                os_flags
- *fill*         0x000000000002f27b        0x1 
+                0x000000000002f23a        0x1 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/rtos/rtx/TARGET_CORTEX_M/RTX_Conf_CM.o
+                0x000000000002f23a                os_flags
+ *fill*         0x000000000002f23b        0x1 
  .rodata.os_maxtaskrun
-                0x000000000002f27c        0x2 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/rtos/rtx/TARGET_CORTEX_M/RTX_Conf_CM.o
-                0x000000000002f27c                os_maxtaskrun
- *fill*         0x000000000002f27e        0x2 
+                0x000000000002f23c        0x2 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/rtos/rtx/TARGET_CORTEX_M/RTX_Conf_CM.o
+                0x000000000002f23c                os_maxtaskrun
+ *fill*         0x000000000002f23e        0x2 
  .rodata.os_messageQ_def_osTimerMessageQ
-                0x000000000002f280        0x8 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/rtos/rtx/TARGET_CORTEX_M/RTX_Conf_CM.o
-                0x000000000002f280                os_messageQ_def_osTimerMessageQ
+                0x000000000002f240        0x8 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/rtos/rtx/TARGET_CORTEX_M/RTX_Conf_CM.o
+                0x000000000002f240                os_messageQ_def_osTimerMessageQ
  .rodata.os_mutex_def_env_mutex
-                0x000000000002f288        0x4 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/rtos/rtx/TARGET_CORTEX_M/RTX_Conf_CM.o
-                0x000000000002f288                os_mutex_def_env_mutex
+                0x000000000002f248        0x4 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/rtos/rtx/TARGET_CORTEX_M/RTX_Conf_CM.o
+                0x000000000002f248                os_mutex_def_env_mutex
  .rodata.os_mutex_def_malloc_mutex
-                0x000000000002f28c        0x4 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/rtos/rtx/TARGET_CORTEX_M/RTX_Conf_CM.o
-                0x000000000002f28c                os_mutex_def_malloc_mutex
+                0x000000000002f24c        0x4 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/rtos/rtx/TARGET_CORTEX_M/RTX_Conf_CM.o
+                0x000000000002f24c                os_mutex_def_malloc_mutex
  .rodata.os_mutex_def_singleton_mutex
-                0x000000000002f290        0x4 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/rtos/rtx/TARGET_CORTEX_M/RTX_Conf_CM.o
-                0x000000000002f290                os_mutex_def_singleton_mutex
+                0x000000000002f250        0x4 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/rtos/rtx/TARGET_CORTEX_M/RTX_Conf_CM.o
+                0x000000000002f250                os_mutex_def_singleton_mutex
  .rodata.os_rrobin
-                0x000000000002f294        0x4 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/rtos/rtx/TARGET_CORTEX_M/RTX_Conf_CM.o
-                0x000000000002f294                os_rrobin
+                0x000000000002f254        0x4 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/rtos/rtx/TARGET_CORTEX_M/RTX_Conf_CM.o
+                0x000000000002f254                os_rrobin
  .rodata.os_stackinfo
-                0x000000000002f298        0x4 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/rtos/rtx/TARGET_CORTEX_M/RTX_Conf_CM.o
-                0x000000000002f298                os_stackinfo
+                0x000000000002f258        0x4 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/rtos/rtx/TARGET_CORTEX_M/RTX_Conf_CM.o
+                0x000000000002f258                os_stackinfo
  .rodata.os_thread_def_osTimerThread
-                0x000000000002f29c       0x14 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/rtos/rtx/TARGET_CORTEX_M/RTX_Conf_CM.o
-                0x000000000002f29c                os_thread_def_osTimerThread
+                0x000000000002f25c       0x14 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/rtos/rtx/TARGET_CORTEX_M/RTX_Conf_CM.o
+                0x000000000002f25c                os_thread_def_osTimerThread
  .rodata.os_trv
-                0x000000000002f2b0        0x4 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/rtos/rtx/TARGET_CORTEX_M/RTX_Conf_CM.o
-                0x000000000002f2b0                os_trv
+                0x000000000002f270        0x4 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/rtos/rtx/TARGET_CORTEX_M/RTX_Conf_CM.o
+                0x000000000002f270                os_trv
  .rodata.os_mutex_def_osThreadMutex
-                0x000000000002f2b4        0x4 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/rtos/rtx/TARGET_CORTEX_M/rt_CMSIS.o
-                0x000000000002f2b4                os_mutex_def_osThreadMutex
+                0x000000000002f274        0x4 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/rtos/rtx/TARGET_CORTEX_M/rt_CMSIS.o
+                0x000000000002f274                os_mutex_def_osThreadMutex
  .rodata.gpio_init.str1.1
-                0x000000000002f2b8       0x56 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5/gpio_api.o
+                0x000000000002f278       0x56 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5/gpio_api.o
  .rodata.gpio_mode.str1.1
-                0x000000000002f30e       0x1b ./BUILD/NRF52_DK/GCC_ARM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5/gpio_api.o
+                0x000000000002f2ce       0x1b ./BUILD/NRF52_DK/GCC_ARM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5/gpio_api.o
  .rodata.gpio_read.str1.1
-                0x000000000002f329       0x18 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5/gpio_api.o
+                0x000000000002f2e9       0x18 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5/gpio_api.o
  .rodata.__func__.7254
-                0x000000000002f329       0x21 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5/nordic_critical.o
+                0x000000000002f2e9       0x21 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5/nordic_critical.o
  .rodata.__func__.7257
-                0x000000000002f34a       0x20 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5/nordic_critical.o
+                0x000000000002f30a       0x20 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5/nordic_critical.o
  .rodata.core_util_critical_section_enter.str1.1
-                0x000000000002f36a       0x50 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5/nordic_critical.o
+                0x000000000002f32a       0x50 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5/nordic_critical.o
  .rodata.core_util_critical_section_exit.str1.1
-                0x000000000002f3ba       0x11 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5/nordic_critical.o
- *fill*         0x000000000002f3cb        0x1 
- .rodata        0x000000000002f3cc       0x10 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5/sdk/ble/peer_manager/gatts_cache_manager.o
+                0x000000000002f37a       0x11 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5/nordic_critical.o
+ *fill*         0x000000000002f38b        0x1 
+ .rodata        0x000000000002f38c       0x10 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5/sdk/ble/peer_manager/gatts_cache_manager.o
  .rodata.service_changed_pending.9877
-                0x000000000002f3dc        0x1 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5/sdk/ble/peer_manager/gatts_cache_manager.o
+                0x000000000002f39c        0x1 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5/sdk/ble/peer_manager/gatts_cache_manager.o
  .rodata.service_changed_pending.9948
-                0x000000000002f3dd        0x1 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5/sdk/ble/peer_manager/gatts_cache_manager.o
- *fill*         0x000000000002f3de        0x2 
- .rodata        0x000000000002f3e0        0x8 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5/sdk/ble/peer_manager/peer_manager.o
+                0x000000000002f39d        0x1 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5/sdk/ble/peer_manager/gatts_cache_manager.o
+ *fill*         0x000000000002f39e        0x2 
+ .rodata        0x000000000002f3a0        0x8 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5/sdk/ble/peer_manager/peer_manager.o
  .rodata.m_fds_tl_dirty
-                0x000000000002f3e8        0x4 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5/sdk/libraries/fds/fds.o
+                0x000000000002f3a8        0x4 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5/sdk/libraries/fds/fds.o
  .rodata.page_tag_data.7719
-                0x000000000002f3ec        0x8 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5/sdk/libraries/fds/fds.o
+                0x000000000002f3ac        0x8 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5/sdk/libraries/fds/fds.o
  .rodata.page_tag_swap.7715
-                0x000000000002f3f4        0x8 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5/sdk/libraries/fds/fds.o
+                0x000000000002f3b4        0x8 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5/sdk/libraries/fds/fds.o
  .rodata.acceptedSpeeds.9338
-                0x000000000002f3fc       0x90 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5/serial_api.o
+                0x000000000002f3bc       0x90 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5/serial_api.o
  .rodata._ZZN4mbed8CallbackIFvvEE8generateINS2_14method_contextI3BLEMS5_FvvEEEEEvRKT_E3ops
-                0x000000000002f48c        0xc ./BUILD/NRF52_DK/GCC_ARM/source/main.o
-                0x000000000002f48c                void mbed::Callback<void ()>::generate<mbed::Callback<void ()>::method_context<BLE, void (BLE::*)()> >(mbed::Callback<void ()>::method_context<BLE, void (BLE::*)()> const&)::ops
+                0x000000000002f44c        0xc ./BUILD/NRF52_DK/GCC_ARM/source/main.o
+                0x000000000002f44c                void mbed::Callback<void ()>::generate<mbed::Callback<void ()>::method_context<BLE, void (BLE::*)()> >(mbed::Callback<void ()>::method_context<BLE, void (BLE::*)()> const&)::ops
  .rodata._ZL11DEVICE_NAME
-                0x000000000002f498        0x4 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
+                0x000000000002f458        0x4 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
  .rodata._ZL11uuid16_list
-                0x000000000002f49c        0x4 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
+                0x000000000002f45c        0x4 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
  .rodata._ZN6events10EventQueue13function_callIN4mbed8CallbackIFvvEEEEEvPv.str1.1
-                0x000000000002f4a0       0x23 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
+                0x000000000002f460       0x23 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
  .rodata.gpio_write.str1.1
-                0x000000000002f4a0       0x52 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
+                0x000000000002f460       0x52 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
  .rodata.__assert_func.str1.4
-                0x000000000002f4a0       0x3f /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-assert.o)
+                0x000000000002f460       0x3f /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-assert.o)
                                          0x43 (size before relaxing)
- *fill*         0x000000000002f4df        0x1 
+ *fill*         0x000000000002f49f        0x1 
  .rodata._setlocale_r.str1.4
-                0x000000000002f4e0        0xa /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-locale.o)
+                0x000000000002f4a0        0xa /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-locale.o)
                                           0xd (size before relaxing)
- *fill*         0x000000000002f4ea        0x2 
+ *fill*         0x000000000002f4aa        0x2 
  .rodata.str1.4
-                0x000000000002f4ec        0x2 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-locale.o)
- *fill*         0x000000000002f4ee        0x2 
+                0x000000000002f4ac        0x2 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-locale.o)
+ *fill*         0x000000000002f4ae        0x2 
  .rodata._svfprintf_r.str1.4
-                0x000000000002f4f0       0x42 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-svfprintf.o)
- *fill*         0x000000000002f532        0x2 
+                0x000000000002f4b0       0x42 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-svfprintf.o)
+ *fill*         0x000000000002f4f2        0x2 
  .rodata.blanks.8331
-                0x000000000002f534       0x10 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-svfprintf.o)
+                0x000000000002f4f4       0x10 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-svfprintf.o)
  .rodata.zeroes.8332
-                0x000000000002f544       0x10 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-svfprintf.o)
+                0x000000000002f504       0x10 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-svfprintf.o)
  .rodata._vfiprintf_r.str1.4
-                0x000000000002f554       0x2f /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-vfiprintf.o)
+                0x000000000002f514       0x2f /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-vfiprintf.o)
  .rodata.blanks.8325
-                0x000000000002f554       0x10 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-vfiprintf.o)
+                0x000000000002f514       0x10 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-vfiprintf.o)
  .rodata.zeroes.8326
-                0x000000000002f564       0x10 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-vfiprintf.o)
+                0x000000000002f524       0x10 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-vfiprintf.o)
  .rodata._ctype_
-                0x000000000002f574      0x101 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-ctype_.o)
-                0x000000000002f574                _ctype_
- *fill*         0x000000000002f675        0x3 
+                0x000000000002f534      0x101 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-ctype_.o)
+                0x000000000002f534                _ctype_
+ *fill*         0x000000000002f635        0x3 
  .rodata._dtoa_r.str1.4
-                0x000000000002f678       0x10 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-dtoa.o)
+                0x000000000002f638       0x10 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-dtoa.o)
                                          0x12 (size before relaxing)
  .rodata.__mprec_bigtens
-                0x000000000002f688       0x28 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-mprec.o)
-                0x000000000002f688                __mprec_bigtens
+                0x000000000002f648       0x28 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-mprec.o)
+                0x000000000002f648                __mprec_bigtens
  .rodata.__mprec_tens
-                0x000000000002f6b0       0xc8 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-mprec.o)
-                0x000000000002f6b0                __mprec_tens
+                0x000000000002f670       0xc8 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-mprec.o)
+                0x000000000002f670                __mprec_tens
  .rodata.p05.7163
-                0x000000000002f778        0xc /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-mprec.o)
+                0x000000000002f738        0xc /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/libc.a(lib_a-mprec.o)
  *(.eh_frame*)
- .eh_frame      0x000000000002f784        0x0 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
- .eh_frame      0x000000000002f784        0x4 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/thumb/v7e-m/fpv4-sp/softfp/crtend.o
+ .eh_frame      0x000000000002f744        0x0 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
+ .eh_frame      0x000000000002f744        0x4 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/thumb/v7e-m/fpv4-sp/softfp/crtend.o
 
-.glue_7         0x000000000002f788        0x0
- .glue_7        0x000000000002f788        0x0 linker stubs
+.glue_7         0x000000000002f748        0x0
+ .glue_7        0x000000000002f748        0x0 linker stubs
 
-.glue_7t        0x000000000002f788        0x0
- .glue_7t       0x000000000002f788        0x0 linker stubs
+.glue_7t        0x000000000002f748        0x0
+ .glue_7t       0x000000000002f748        0x0 linker stubs
 
-.vfp11_veneer   0x000000000002f788        0x0
- .vfp11_veneer  0x000000000002f788        0x0 linker stubs
+.vfp11_veneer   0x000000000002f748        0x0
+ .vfp11_veneer  0x000000000002f748        0x0 linker stubs
 
-.v4_bx          0x000000000002f788        0x0
- .v4_bx         0x000000000002f788        0x0 linker stubs
+.v4_bx          0x000000000002f748        0x0
+ .v4_bx         0x000000000002f748        0x0 linker stubs
 
-.iplt           0x000000000002f788        0x0
- .iplt          0x000000000002f788        0x0 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
+.iplt           0x000000000002f748        0x0
+ .iplt          0x000000000002f748        0x0 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
 
-.ARM.extab      0x000000000002f788        0x0
+.ARM.extab      0x000000000002f748        0x0
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x000000000002f788                . = ALIGN (0x4)
-                0x000000000002f788                __exidx_start = .
+                0x000000000002f748                . = ALIGN (0x4)
+                0x000000000002f748                __exidx_start = .
 
-.ARM.exidx      0x000000000002f788        0x8
+.ARM.exidx      0x000000000002f748        0x8
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
- .ARM.exidx     0x000000000002f788        0x8 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o
- .ARM.exidx     0x000000000002f790        0x0 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/rtos/rtx/TARGET_CORTEX_M/TARGET_RTOS_M4_M7/TOOLCHAIN_GCC/HAL_CM4.o
+ .ARM.exidx     0x000000000002f748        0x8 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o
+ .ARM.exidx     0x000000000002f750        0x0 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/rtos/rtx/TARGET_CORTEX_M/TARGET_RTOS_M4_M7/TOOLCHAIN_GCC/HAL_CM4.o
                                          0x48 (size before relaxing)
- .ARM.exidx     0x000000000002f790        0x0 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5/TARGET_MCU_NRF52832/device/TOOLCHAIN_GCC_ARM/startup_NRF52832.o
+ .ARM.exidx     0x000000000002f750        0x0 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5/TARGET_MCU_NRF52832/device/TOOLCHAIN_GCC_ARM/startup_NRF52832.o
                                           0x8 (size before relaxing)
- .ARM.exidx     0x000000000002f790        0x0 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/thumb/v7e-m/fpv4-sp/softfp/libgcc.a(_udivmoddi4.o)
+ .ARM.exidx     0x000000000002f750        0x0 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/thumb/v7e-m/fpv4-sp/softfp/libgcc.a(_udivmoddi4.o)
                                           0x8 (size before relaxing)
-                0x000000000002f790                . = ALIGN (0x4)
-                0x000000000002f790                __exidx_end = .
-                0x000000000002f790                __etext = .
+                0x000000000002f750                . = ALIGN (0x4)
+                0x000000000002f750                __exidx_end = .
+                0x000000000002f750                __etext = .
 
-.rel.dyn        0x000000000002f790        0x0
- .rel.iplt      0x000000000002f790        0x0 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
+.rel.dyn        0x000000000002f750        0x0
+ .rel.iplt      0x000000000002f750        0x0 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
 
-.data           0x0000000020002ef8      0xa68 load address 0x000000000002f790
+.data           0x0000000020002ef8      0xa68 load address 0x000000000002f750
                 0x0000000020002ef8                __data_start__ = .
  *(vtable)
  *(.data*)
@@ -8898,17 +8891,17 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-non
                 0x0000000020003960                __data_end__ = .
                 0x0000000020003960                __edata = .
 
-.igot.plt       0x0000000020003960        0x0 load address 0x00000000000301f8
+.igot.plt       0x0000000020003960        0x0 load address 0x00000000000301b8
  .igot.plt      0x0000000020003960        0x0 /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-none-eabi/6.2.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
 
-.noinit         0x0000000020003960       0xd8 load address 0x00000000000301f8
+.noinit         0x0000000020003960       0xd8 load address 0x00000000000301b8
                 [!provide]                        PROVIDE (__start_noinit, .)
  *(.noinit)
  .noinit        0x0000000020003960       0xd8 ./BUILD/NRF52_DK/GCC_ARM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5/reloc_vector_table.o
                 0x0000000020003960                nrf_dispatch_vector
                 [!provide]                        PROVIDE (__stop_noinit, .)
 
-.bss            0x0000000020003a38     0x1de8 load address 0x00000000000302d0
+.bss            0x0000000020003a38     0x1de8 load address 0x0000000000030290
                 0x0000000020003a38                . = ALIGN (0x4)
                 0x0000000020003a38                __bss_start__ = .
  *(.bss*)
@@ -9091,10 +9084,7 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-non
  .bss.alivenessLED
                 0x0000000020004f11        0x1 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
                 0x0000000020004f11                alivenessLED
- .bss.bleInitLED
-                0x0000000020004f12        0x1 ./BUILD/NRF52_DK/GCC_ARM/source/main.o
-                0x0000000020004f12                bleInitLED
- *fill*         0x0000000020004f13        0x1 
+ *fill*         0x0000000020004f12        0x2 
  .bss.button1   0x0000000020004f14       0x2c ./BUILD/NRF52_DK/GCC_ARM/source/main.o
                 0x0000000020004f14                button1
  .bss.ledServicePtr
@@ -9158,7 +9148,7 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-non
                 0x0000000020005820                . = ALIGN (0x4)
                 0x0000000020005820                __bss_end__ = .
 
-.heap           0x0000000020005820     0x9fe0 load address 0x00000000000320b8
+.heap           0x0000000020005820     0x9fe0 load address 0x0000000000032078
                 0x0000000020005820                __end__ = .
                 0x0000000020005820                end = __end__
  *(.heap*)
@@ -9170,7 +9160,7 @@ LOAD /usr/local/Cellar/arm-none-eabi-gcc/6-2016-q4-update/bin/../lib/gcc/arm-non
                 [!provide]                        PROVIDE (__mbed_sbrk_start, ADDR (.heap))
                 [!provide]                        PROVIDE (__mbed_krbs_start, (ADDR (.heap) + SIZEOF (.heap)))
 
-.stack          0x000000002000f800      0x800 load address 0x000000000003c098
+.stack          0x000000002000f800      0x800 load address 0x000000000003c058
                 0x000000002000f800                __StackLimit = .
  *(.stack*)
                 0x0000000020010000                . = (. + ((ORIGIN (RAM) + LENGTH (RAM)) - .))

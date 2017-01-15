@@ -3,16 +3,16 @@
         "module": "Fill", 
         "size": {
             ".data": 3, 
-            ".bss": 45, 
-            ".text": 164
+            ".bss": 46, 
+            ".text": 196
         }
     }, 
     {
         "module": "Misc", 
         "size": {
             ".data": 2488, 
-            ".bss": 248, 
-            ".text": 28586
+            ".bss": 247, 
+            ".text": 28490
         }
     }, 
     {
@@ -89,7 +89,7 @@
     }, 
     {
         "summary": {
-            "total_flash": 82756, 
+            "total_flash": 82692, 
             "static_ram": 10320, 
             "stack": 2048, 
             "heap": 40928, 
