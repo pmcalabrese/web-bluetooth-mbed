@@ -62,7 +62,7 @@ function notifyButton2() {
 
 function handleNotificationsButton2(event) {
   let value = event.target.value;
-  console.log("button2 value", !value.getUint8(0));
+  console.log("button2 pressed", !!value.getUint8(0));
 }
 
 // utils

@@ -3,18 +3,29 @@
     <head>
         <title>webbluetooth experiment page</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.0/css/bulma.min.css">
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <style>
+            body {
+                padding: 15px;
+            }
+            pre.code {
+                border: 1px solid darkgray;
+                padding: 15px;
+                white-space: pre-line;
+            }
+        </style>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/riot/3.0.7/riot+compiler.min.js"></script>
     </head>
 
     <body>
         <div class="columns">
             <div class="column">
-                <h1 class="title">Webbluetooth + nrf52DK experiment page</h1>
-                <button class="button" onclick="connect()">Connect</button>
-                <button class="button" onclick="changeState(1)">Turn LED2 off</button>
-                <button class="button" onclick="changeState(0)">Turn LED2 on</button>
-                <button class="button" onclick="readValue()">Read value</button>
+                <h1 class="title is-3">Webbluetooth experiment page with the nrf52DK</h1>
+                <app></app>
             </div>
         </div>
-        <script src="./wb.js"></script>
+        <!-- <script src="./wb.js"></script> -->
+        <script src="./app.js"></script>
+        <script>riot.mount('app')</script>
     </body>
 </html>
