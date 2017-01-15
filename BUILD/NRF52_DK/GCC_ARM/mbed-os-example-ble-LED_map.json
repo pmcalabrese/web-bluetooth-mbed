@@ -3,16 +3,16 @@
         "module": "Fill", 
         "size": {
             ".data": 3, 
-            ".bss": 39, 
-            ".text": 160
+            ".bss": 45, 
+            ".text": 164
         }
     }, 
     {
         "module": "Misc", 
         "size": {
             ".data": 2488, 
-            ".bss": 198, 
-            ".text": 28120
+            ".bss": 248, 
+            ".text": 28586
         }
     }, 
     {
@@ -20,7 +20,7 @@
         "size": {
             ".data": 0, 
             ".bss": 0, 
-            ".text": 704
+            ".text": 1157
         }
     }, 
     {
@@ -44,7 +44,7 @@
         "size": {
             ".data": 5, 
             ".bss": 540, 
-            ".text": 16388
+            ".text": 16420
         }
     }, 
     {
@@ -52,7 +52,7 @@
         "size": {
             ".data": 0, 
             ".bss": 16, 
-            ".text": 506
+            ".text": 550
         }
     }, 
     {
@@ -84,15 +84,15 @@
         "size": {
             ".data": 140, 
             ".bss": 2200, 
-            ".text": 23679
+            ".text": 24011
         }
     }, 
     {
         "summary": {
-            "total_flash": 81425, 
-            "static_ram": 10264, 
+            "total_flash": 82756, 
+            "static_ram": 10320, 
             "stack": 2048, 
-            "heap": 40984, 
+            "heap": 40928, 
             "total_ram": 53296
         }
     }

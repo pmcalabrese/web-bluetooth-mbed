@@ -2,12 +2,19 @@
 <html>
     <head>
         <title>webbluetooth experiment page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.0/css/bulma.min.css">
     </head>
+
     <body>
-        <h1> web bluetooth experiment page </h1>
-        <button onclick="connect()">Connect</button>
-        <button onclick="changeState(1)">Turn LED2 off</button>
-        <button onclick="changeState(0)">Turn LED2 on</button>
+        <div class="columns">
+            <div class="column">
+                <h1 class="title">Webbluetooth + nrf52DK experiment page</h1>
+                <button class="button" onclick="connect()">Connect</button>
+                <button class="button" onclick="changeState(1)">Turn LED2 off</button>
+                <button class="button" onclick="changeState(0)">Turn LED2 on</button>
+                <button class="button" onclick="readValue()">Read value</button>
+            </div>
+        </div>
         <script src="./wb.js"></script>
     </body>
 </html>

@@ -106,4 +106,4 @@ BUILD/NRF52_DK/GCC_ARM/source/main.o: source/main.cpp \
  mbed-os/features/FEATURE_BLE/ble/ServiceDiscovery.h \
  mbed-os/features/FEATURE_BLE/ble/CharacteristicDescriptorDiscovery.h \
  mbed-os/features/FEATURE_BLE/ble/FunctionPointerWithContext.h \
- mbed-os/platform/mbed_error.h source/LEDService.h
+ mbed-os/platform/mbed_error.h source/LEDService.h source/ButtonService.h

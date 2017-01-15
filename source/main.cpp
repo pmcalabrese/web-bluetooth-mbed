@@ -18,16 +18,27 @@
 #include <mbed.h>
 #include "ble/BLE.h"
 #include "LEDService.h"
+#include "ButtonService.h"
 
 DigitalOut alivenessLED(LED1, 0);
 DigitalOut actuatedLED(LED2, 0);
+DigitalOut pLED(LED3, 0);
+InterruptIn button1(BUTTON1);
 
 const static char     DEVICE_NAME[] = "LED";
-static const uint16_t uuid16_list[] = {LEDService::LED_SERVICE_UUID};
+static const uint16_t uuid16_list[] = {LEDService::LED_SERVICE_UUID, ButtonService::BUTTON_SERVICE_UUID};
 
 static EventQueue eventQueue(
     /* event count */ 10 * /* event size */ 32
 );
+
+enum {
+    RELEASED = 0,
+    PRESSED,
+    IDLE
+};
+static uint8_t buttonState = IDLE;
+static ButtonService *buttonServicePtr;
 
 LEDService *ledServicePtr;
 
@@ -87,6 +98,10 @@ void bleInitComplete(BLE::InitializationCompleteCallbackContext *params)
     bool initialValueForLEDCharacteristic = false;
     ledServicePtr = new LEDService(ble, initialValueForLEDCharacteristic);
 
+    /* Setup primary service */
+    bool initialValueForBUTTONCharacteristic = false;
+    buttonServicePtr = new ButtonService(ble, initialValueForBUTTONCharacteristic /* initial value for button pressed */);
+
     /* setup advertising */
     ble.gap().accumulateAdvertisingPayload(GapAdvertisingData::BREDR_NOT_SUPPORTED | GapAdvertisingData::LE_GENERAL_DISCOVERABLE);
     ble.gap().accumulateAdvertisingPayload(GapAdvertisingData::COMPLETE_LIST_16BIT_SERVICE_IDS, (uint8_t *)uuid16_list, sizeof(uuid16_list));
@@ -101,15 +116,38 @@ void scheduleBleEventsProcessing(BLE::OnEventsToProcessCallbackContext* context)
     eventQueue.call(Callback<void()>(&ble, &BLE::processEvents));
 }
 
+void buttonPressedCallback(void)
+{
+    /* Note that the buttonPressedCallback() executes in interrupt context, so it is safer to access
+     * BLE device API from the main thread. */
+    buttonState = PRESSED;
+    buttonServicePtr->updateButtonState(buttonState);
+    pLED = true;
+}
+ 
+void buttonReleasedCallback(void)
+{
+    /* Note that the buttonReleasedCallback() executes in interrupt context, so it is safer to access
+     * BLE device API from the main thread. */
+    buttonState = RELEASED;
+    buttonServicePtr->updateButtonState(buttonState);
+    pLED = false;
+}
+
 int main()
 {
-    eventQueue.call_every(500, blinkCallback);
+    int id = eventQueue.call_every(100, blinkCallback);
+
+    button1.fall(buttonPressedCallback);
+    button1.rise(buttonReleasedCallback);
 
     BLE &ble = BLE::Instance();
     ble.onEventsToProcess(scheduleBleEventsProcessing);
     ble.init(bleInitComplete);
 
     eventQueue.dispatch_forever();
+
+    while (ble.hasInitialized()  == false) { /* spin loop */ }
 
     return 0;
 }
