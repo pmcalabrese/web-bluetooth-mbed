@@ -8,18 +8,24 @@
  - LED2 is the LED controlled (write) from the web page
  - LED3 reflects the BUTTON1 it's ON if the button is released and it's off when pressed
 
-### Buttons
+### Buttons meaning
 
  - BUTTON1 is able to send from the device to the browser its state
 
 ### Firmware stack
 
+Install mbed-cli first follow theinstruction on this page https://github.com/ARMmbed/mbed-cli.
 The firmware uses the mbedOS5 environment and it's compiled with the mbed-cli.
 for compile run
+
+from the folder *source* run
 
 ```Bash
 mbed compile -t GCC_ARM -m NRF52_DK
 ```
+
+After compile a BUILD folder will be created.
+In the BUILD at this path NRF52_DK/GCC_ARM/mbed-os-example-ble-LED.hex there is the .hex file. Drop that file into the board (which will appear like and USB drive).
 
 ### Bluetooth architecture
 
@@ -32,11 +38,21 @@ const static uint16_t BUTTON_STATE_CHARACTERISTIC_UUID = 0xB001;
 
 ## Web test page
 
-the web page uses the Riotjs framework. Riotjs use tags file (components) which needs to be compiled by the riotjs compiler
+### Install tools
+
+```Bash
+npm install riot riot-cli live-server -g
+```
+
+The web page uses the Riotjs framework. Riotjs use tags file (components) which needs to be compiled by the riot compiler
+
+from the folder *webbluetooth_testpage* run
 
 ```Bash
 riot --watch .
 ```
+
+After compile you can run it with
 
 Serve it
 ```Bash
