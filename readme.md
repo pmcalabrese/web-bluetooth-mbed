@@ -52,9 +52,8 @@ from the folder *webbluetooth_testpage* run
 riot --watch .
 ```
 
-After compile you can run it with
+Now you serve the web app by running
 
-Serve it
 ```Bash
 live-server .
 ```
