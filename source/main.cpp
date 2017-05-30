@@ -40,7 +40,7 @@ enum {
 static uint8_t buttonState = IDLE;
 static ButtonService *buttonServicePtr;
 
-LEDService *ledServicePtr;
+static LEDService *ledServicePtr; // I think there must be a static here
 
 void disconnectionCallback(const Gap::DisconnectionCallbackParams_t *params)
 {
