@@ -1,5 +1,6 @@
 # Webbluetooth + nrf52DK experiment page
 
+Video of the project presentation - 30th May 2017 in London at CodeNode
 https://skillsmatter.com/skillscasts/10356-webbluetooth-and-arm-mbed-enabled-platform
 
 ## nrf52DK
