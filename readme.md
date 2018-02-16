@@ -1,5 +1,7 @@
 # Webbluetooth + nrf52DK experiment page
 
+https://skillsmatter.com/skillscasts/10356-webbluetooth-and-arm-mbed-enabled-platform
+
 ## nrf52DK
 
 ### LEDs meaning
